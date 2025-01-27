@@ -1,6 +1,6 @@
 package Lesson5;
 
-import Lesson3.Tasks;
+
 
 import java.util.Scanner;
 
@@ -17,9 +17,12 @@ public class Main {
          */
         Park park = new Park();
         park.createAttractions();
+
     }
 
 }
+
+
 
 
 
