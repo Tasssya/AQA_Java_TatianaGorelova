@@ -62,6 +62,7 @@ public class Main {
 
         arrayInfo(dogCount, catCount);
         printAnimalInfo(animals);
+        figures();
     }
 
     /**
@@ -86,4 +87,26 @@ public class Main {
             System.out.println(animals[i].getName() + " проплыл " + animals[i].swimmed);
         }
     }
+
+    public static void figures() {
+        Figure circle = new Circle(3);
+        Figure rectangle = new Rectangle(1, 2);
+        Figure triangle = new Triangle(1, 2, 3);
+
+        System.out.println("Круг:");
+        circle.showProperties("Синий", "Зеленый");
+        System.out.println("Периметр: " + circle.calculatePerimeter());
+        System.out.println("Площадь: " + circle.calculateArea());
+
+        System.out.println("\nПрямоугольник:");
+        rectangle.showProperties("Синий", "Зелёный");
+        System.out.println("Периметр: " + rectangle.calculatePerimeter());
+        System.out.println("Площадь: " + rectangle.calculateArea());
+
+        System.out.println("\nТреугольник:");
+        triangle.showProperties("Синий", "Зеленый");
+        System.out.println("Периметр: " + triangle.calculatePerimeter());
+        System.out.println("Площадь: " + triangle.calculateArea());
+    }
+
 }
